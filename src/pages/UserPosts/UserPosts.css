@@ -1,0 +1,91 @@
+.UsersContents {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px 100px;
+}
+
+.authorDetails {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px 50px;
+  background-color: #000000;
+  color: white;
+}
+
+.authorDetails h3 {
+  font-size: 20px;
+}
+
+.default-avatar-icon-user {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.writerPicture {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid whitesmoke;
+}
+
+.mydisplayinfo h1 {
+  font-size: 20px;
+}
+
+.mydisplayinfo h3 {
+  font-size: 15px;
+}
+
+.EachContent {
+  border-radius: 15px;
+  box-shadow: 2px 5px 6px 8px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.EachContentTop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#faeye {
+  width: 12px;
+  height: 12px;
+}
+
+#displayview {
+  padding: 0px 5px;
+}
+
+#displayview span {
+  font-size: 12px;
+  padding-left: 5px;
+}
+
+#s-title {
+  font-size: 19px;
+  font-family: "Poetsen One", sans-serif;
+}
+
+@media screen and (max-width: 980px) {
+  .UsersContents {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px 10px;
+  }
+  .authorDetails {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+  }
+  .content {
+    font-size: 14px;
+  }
+}

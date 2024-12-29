@@ -1,0 +1,273 @@
+.Navbar {
+  background-color: rgb(3, 25, 3);
+  padding: 0px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 900;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.NavbarContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 0px 20px;
+}
+
+.Logo a {
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+  font-family: "Poetsen One", sans-serif;
+  color: green;
+  color: white;
+}
+
+.SearchBar {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  max-width: 500px;
+  margin-left: 20px;
+  padding-top: 10px;
+}
+
+.SearchBar input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px 0 0 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.SearchBar button {
+  padding: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-color: green;
+}
+
+.SearchBar button:hover {
+  background-color: rgb(1, 35, 1);
+}
+
+.NavActions {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.NavItem {
+  font-size: 18px;
+  position: relative;
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+.NavItem a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  transition: color 0.3s ease;
+  color: white;
+}
+.NavItem a:hover {
+  color: green;
+}
+
+.NavItem span {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  color: white;
+}
+.NavItem span:hover {
+  color: green;
+}
+.DropdownMenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 5px;
+  z-index: 999;
+  min-width: 150px;
+  width: 100%;
+}
+
+.DropdownMenu li {
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+}
+
+.DropdownMenu li a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 14px;
+}
+
+.DropdownMenu li a:hover {
+  background-color: #f0f0f0;
+  color: green;
+}
+
+.NavItem:hover .DropdownMenu {
+  display: block;
+}
+.browse-list {
+  background: white;
+  width: fit-content;
+}
+.NavItem:hover .browse-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.Browse .DropdownMenu,
+.AuthorsBenefit .DropdownMenu,
+.Contest .DropdownMenu {
+  width: 100%;
+  cursor: pointer;
+}
+
+.Browse .DropdownMenu li,
+.AuthorsBenefit .DropdownMenu li,
+.Contest .DropdownMenu li {
+  padding: 8px;
+}
+
+.Browse .DropdownMenu li a,
+.AuthorsBenefit .DropdownMenu li a,
+.Contest .DropdownMenu li a {
+  color: #333;
+}
+
+/* Mobile Menu Icon */
+.MobileMenuIcon {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  color: white;
+}
+
+.DropdownMenu.open {
+  display: block;
+}
+
+.Account {
+  background-color: green;
+  color: white;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.Account span {
+  color: white;
+}
+.Account span:hover {
+  color: white;
+}
+.Account:hover .DropdownMenu {
+  display: block;
+}
+.loginbutton,
+.logoutbutton {
+  border: none;
+  background-color: white;
+  color: green;
+}
+.LoggingOutMessage {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+#icn {
+  color: white;
+}
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .Navbar {
+    padding: 20px;
+  }
+  .SearchBar {
+    display: none;
+  }
+
+  .NavActions {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: black;
+    background-color: rgb(3, 25, 3);
+
+    border-radius: 5px;
+    padding: 20px;
+    display: none;
+    align-items: flex-start;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .NavActions.active {
+    display: flex;
+    text-align: left;
+  }
+
+  .NavActions.active li {
+    width: fit-content;
+  }
+
+  .NavActions.active li a {
+    width: 100%;
+    padding: 10px 0;
+    text-align: left;
+    padding-left: 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .MobileMenuIcon {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+  }
+
+  .Logo {
+    margin-right: auto;
+  }
+  .Account {
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  #browse-lists {
+    display: none;
+  }
+}

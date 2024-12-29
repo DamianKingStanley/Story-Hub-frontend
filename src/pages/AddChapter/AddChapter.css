@@ -1,0 +1,154 @@
+.AddChapterContainer {
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(216, 82, 82, 0.1);
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.ChapterFormContainer {
+  flex: 1;
+  margin-right: 20px;
+  padding: 30px;
+  max-width: 600px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.ChapterFormContainer h1 {
+  text-align: center;
+  font-size: 18px;
+  color: green;
+}
+.addChapterForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.addChapterForm input[type="text"],
+.addChapterForm textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+}
+
+.addChapterForm textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.addChapterForm label {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #555;
+}
+
+.addChapterForm input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.addChapterBtn {
+  background-color: rgb(2, 44, 2);
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.addChapterBtn:hover {
+  background-color: green;
+}
+
+.previousChapters {
+  flex: 1;
+  padding: 30px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.previousChapters h2 {
+  color: #ff4081;
+  font-size: 20px;
+  text-align: center;
+}
+
+.previousChapters {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+#EachChapter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+#EachChapter:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.EachChapterAction {
+  display: flex;
+  flex-direction: row;
+  color: #ff4081;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.previousChapters h3 {
+  font-size: 18px;
+  color: #333;
+}
+
+.previousChapters button {
+  margin-top: 8px;
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: #e0e0e0;
+  color: #555;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.previousChapters button:hover {
+  background-color: #d4d4d4;
+}
+@media screen and (max-width: 980px) {
+  .AddChapterContainer {
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .ChapterFormContainer {
+    flex: 1;
+    margin-right: 0px;
+    padding: 10px;
+  }
+  .previousChapters {
+    flex: 1;
+    padding: 10px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}

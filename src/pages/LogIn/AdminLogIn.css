@@ -1,0 +1,127 @@
+.AdminLogInbody {
+  /* background: linear-gradient(135deg, #ffd166, #ef476f); */
+  background-color: rgb(2, 48, 2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #1d3557;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.Login {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.Login h1 {
+  font-size: 2rem;
+  color: #032a39;
+  font-weight: bold;
+  font-family: "Poetsen One", sans-serif;
+}
+
+.Login p {
+  color: #032a39;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+#Loginform input[type="email"],
+#Loginform input[type="password"],
+#Loginform select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #1d3557;
+  border: 2px solid #e9c46a;
+  border-radius: 8px;
+  outline: none;
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-container input {
+  width: 100%;
+}
+
+.password-toggle-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #457b9d;
+}
+
+#submitbtn {
+  width: 100%;
+  padding: 12px;
+  background-color: #457b9d;
+  background-color: #032a39;
+
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#submitbtn:hover {
+  background-color: #1d3557;
+}
+
+#submitbtn:disabled {
+  background-color: #a8dadc;
+  cursor: not-allowed;
+}
+
+.LogInbody .success-message,
+.LogInbody .error-message {
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+.LogInbody .success-message {
+  background-color: #4caf50;
+}
+
+.LogInbody .error-message {
+  background-color: #e63946;
+}
+
+.Login a {
+  color: #e63946;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.Login a:hover {
+  color: #457b9d;
+}
+
+.Login p {
+  margin: 0.5rem 0;
+}
+#role {
+  display: none;
+}
+@media screen and (max-width: 980px) {
+  .AdminLogInbody {
+    padding: 50px 10px;
+  }
+}

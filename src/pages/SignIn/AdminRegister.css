@@ -1,0 +1,135 @@
+.AdminSignInbody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: linear-gradient(120deg, #f4a261, #e76f51); */
+  background-color: rgb(2, 48, 2);
+  font-family: "Lato", sans-serif;
+  padding: 50px 100px;
+}
+
+.register {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  padding: 40px 30px;
+  width: 100%;
+  text-align: center;
+  max-width: 500px;
+}
+
+.register h1 {
+  font-size: 2em;
+  color: #264653;
+  margin-bottom: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: "Poetsen One", sans-serif;
+}
+
+#registerform input[type="text"],
+#registerform input[type="email"],
+#registerform input[type="password"],
+#registerform select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 1em;
+  color: #264653;
+  border: 2px solid #e9c46a;
+  border-radius: 8px;
+  outline: none;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+#registerform input[type="text"]:focus,
+#registerform input[type="email"]:focus,
+#registerform input[type="password"]:focus,
+#registerform select:focus {
+  border-color: #e76f51;
+  box-shadow: 0px 0px 5px #e76f51;
+}
+
+/* Error and success message styling */
+.error-message,
+.success-message {
+  font-size: 0.9em;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: left;
+  text-align: center;
+}
+
+.register .error-message {
+  color: #e63946;
+}
+
+.success-message {
+  color: #2a9d8f;
+  background-color: rgba(42, 157, 143, 0.1);
+}
+
+/* Button styling */
+.register #submitbtn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #032a39;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+.register #submitbtn.loading::after {
+  content: "Please wait...";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.9em;
+  color: #fff;
+}
+
+.register #submitbtn:hover:not(:disabled) {
+  background-color: #2a9d8f;
+}
+
+.register #submitbtn:disabled {
+  background-color: #e9c46a;
+  cursor: not-allowed;
+}
+
+#registerform p {
+  font-size: 0.9em;
+  color: #555;
+}
+
+#registerform p a {
+  color: #e76f51;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#registerform p a:hover {
+  color: #2a9d8f;
+  text-decoration: underline;
+}
+/* #userRole {
+    display: none;
+  } */
+@media screen and (max-width: 980px) {
+  .AdminSignInbody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lato", sans-serif;
+    padding: 50px 10px;
+  }
+}

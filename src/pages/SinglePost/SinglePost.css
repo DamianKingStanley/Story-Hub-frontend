@@ -1,0 +1,215 @@
+.story-details-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.story-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 50px;
+  background-color: white;
+  background: linear-gradient(135deg, #7c5804, #6e041c);
+  border-radius: 10px;
+  padding: 60px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.story-content h1 {
+  font-size: 1.8em;
+  margin: 0;
+}
+.story-content-details h1 {
+  font-size: 45px;
+  font-family: "Poetsen One", sans-serif;
+  color: green;
+  color: white;
+}
+
+.story-content-details p {
+  color: white;
+  margin-top: 8px;
+  font-size: 20px;
+}
+.story-meta p {
+  display: inline-block;
+  margin-right: 10px;
+  color: #777;
+  color: green;
+  color: white;
+}
+
+.story-additional {
+  flex: 0.3;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.story-additional-char-trope {
+  display: flex;
+  gap: 40px;
+}
+
+.story-additional-char-trope ul li {
+  font-size: 20px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #7c5804, #6e041c);
+  color: white;
+  border-radius: 10px;
+  padding: 8px;
+}
+.story-additional h2 {
+  font-size: 45px;
+  margin: 10px;
+  color: #444;
+  text-align: center;
+}
+
+.story-additional ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.story-additional ul li {
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.chapter-content {
+  padding: 15px;
+  border-top: 1px solid #ddd;
+}
+
+.chapter-title {
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.chapter-title-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.chapter-title-li {
+  background-color: #f4f4f8;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chapter-title-li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.chapter-title {
+  color: #333;
+  font-size: 16px;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  transition: color 0.2s ease;
+}
+
+.chapter-title:hover {
+  color: rgb(2, 77, 2);
+}
+
+.chapter-title:hover::after {
+  transform: scaleX(1);
+}
+.chapter-view-like {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+.modal p {
+  color: green;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+.addLibraryButton {
+  border: 1px solid white;
+  background-color: rgb(1, 36, 1);
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+.addLibraryButton:hover {
+  background-color: green;
+}
+.story-cover-img {
+  width: 300px;
+  height: 300px;
+}
+@media screen and (max-width: 980px) {
+  .story-details-page {
+    gap: 20px;
+    padding: 10px;
+  }
+  .story-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .story-content h1 {
+    font-size: 30px;
+    margin: 0;
+  }
+  .story-content-details p {
+    color: white;
+    margin-top: 8px;
+    font-size: 15px;
+  }
+  .story-additional-char-trope {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .story-additional-char-trope ul li {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .story-additional h2 {
+    font-size: 25px;
+  }
+  .chapter-title-li a {
+    font-size: 13px;
+  }
+}

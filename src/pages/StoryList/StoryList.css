@@ -1,0 +1,12 @@
+.add-chapter-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #0066cc;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.add-chapter-link:hover {
+  color: #004999;
+}

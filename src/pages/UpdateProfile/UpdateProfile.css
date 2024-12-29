@@ -1,0 +1,141 @@
+.UpdateProfileForm {
+  padding: 50px 50px 100px 50px;
+  margin: 20px 40px 0px 40px;
+}
+
+.UpdateProfileForm h2 {
+  color: blue;
+}
+
+form h2 {
+  color: blue;
+}
+
+#fullname,
+#username,
+#phoneNumber,
+#location {
+  width: 500px;
+  height: 50px;
+  padding-left: 10px;
+  border: 1px solid blue;
+  background-color: inherit;
+  color: inherit;
+}
+
+#updateButton {
+  width: 500px;
+  height: 50px;
+  background-color: blue;
+  color: white;
+  border-radius: 4px;
+  border: none;
+}
+
+#updateButton:hover {
+  background-color: rgb(3, 3, 56);
+}
+
+.displayImageContainer {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+}
+
+.displayImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatarIcon {
+  width: 80px;
+  height: 80px;
+  color: gray;
+}
+
+.profilePictureChoices {
+  align-items: center;
+  overflow-x: visible;
+  padding-bottom: 15px;
+}
+
+.profilePictureChoice {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.profilePictureChoice:hover {
+  transform: scale(1.1);
+}
+
+.selectedProfilePicture {
+  border: 2px solid #007bff;
+  box-shadow: 0px 0px 10px #007bff;
+}
+
+.selectedProfilePicture {
+  border: 2px solid #007bff;
+  box-shadow: 0px 0px 10px #007bff;
+}
+
+.InputValues {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.InputValues p {
+  background-color: rgb(110, 110, 222);
+  height: 50px;
+  color: white;
+  padding: 10px;
+}
+
+@media screen and (max-width: 980px) {
+  .UpdateProfileForm {
+    padding: 20px 10px 40px 10px;
+    margin: 20px 0px 0px 5px;
+  }
+  #fullname,
+  #username,
+  #phoneNumber,
+  #location {
+    width: 300px;
+    height: 50px;
+    padding-left: auto;
+  }
+  #updateButton {
+    width: 300px;
+    height: 50px;
+  }
+  .profileDetails {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .profilePictureChoices {
+    align-items: center;
+    padding-bottom: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .profilePictureChoice {
+    width: 50px;
+    height: 50px;
+  }
+}

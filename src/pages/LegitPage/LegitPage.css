@@ -1,0 +1,57 @@
+.legit-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  /* color: #fff; */
+  line-height: 1.6;
+  /* background-color: rgb(3, 25, 3); */
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.legit-page h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: green;
+}
+
+.legit-section {
+  margin-bottom: 30px;
+}
+
+.legit-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.legit-section p {
+  font-size: 16px;
+}
+
+.legit-footer {
+  margin-top: 30px;
+  font-size: 18px;
+  text-align: center;
+  color: green;
+}
+
+.icon-check {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .legit-page {
+    padding: 20px;
+  }
+
+  .legit-page h1 {
+    font-size: 28px;
+  }
+
+  .legit-section h2 {
+    font-size: 20px;
+  }
+}

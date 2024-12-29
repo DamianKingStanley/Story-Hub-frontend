@@ -1,0 +1,89 @@
+.writer-benefit-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  color: green;
+  line-height: 1.6;
+}
+
+.writer-benefit-page h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2a2a52;
+  color: green;
+}
+
+.benefit-section {
+  margin-bottom: 30px;
+}
+
+.benefit-section h2 {
+  font-size: 24px;
+
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.benefit-section p {
+  font-size: 16px;
+}
+
+.icon {
+  color: green;
+
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.writer-contact {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.writer-contact h2 {
+  font-size: 24px;
+}
+
+.writer-contact p {
+  font-size: 16px;
+}
+
+.writer-contact a {
+  text-decoration: none;
+}
+
+.writer-contact a:hover {
+  text-decoration: underline;
+}
+
+.signup-button {
+  background-color: green;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.signup-button:hover {
+  background-color: rgb(2, 52, 2);
+}
+
+@media (max-width: 768px) {
+  .writer-benefit-page {
+    padding: 20px;
+  }
+
+  .writer-benefit-page h1 {
+    font-size: 28px;
+  }
+
+  .benefit-section h2 {
+    font-size: 20px;
+  }
+}

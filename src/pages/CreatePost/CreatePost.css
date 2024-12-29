@@ -1,0 +1,139 @@
+.Createpost {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+  gap: 30px;
+  background: linear-gradient(120deg, #f4a261, #e76f51);
+}
+
+.coverrDiv {
+  padding: 20px;
+  background-color: #fff;
+  height: fit-content;
+  border-radius: 10px;
+}
+
+#coverDisplay {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+
+.coverrDiv h3 {
+  font-size: 18px;
+  font-family: "Poetsen One", sans-serif;
+}
+
+.storyInfoDiv {
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.storyInfoDiv h3 {
+  font-size: 18px;
+}
+
+.storyInfoDiv h1 {
+  text-align: center;
+  font-family: "Poetsen One", sans-serif;
+}
+
+#postTitle,
+#genre,
+#trope,
+#author,
+#character {
+  width: 100%;
+  max-width: 100%;
+  height: 50px;
+  padding: 2px 10px;
+  background-color: inherit;
+  border: 2px solid #e9c46a;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 10px 0px;
+}
+
+.tag {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.remove-tag {
+  margin-left: 5px;
+  cursor: pointer;
+  color: red;
+}
+
+#synopsis {
+  width: 100%;
+  max-width: 100%;
+  height: 150px;
+  padding: 6px 10px;
+  background-color: inherit;
+  border: 2px solid #e9c46a;
+  border-radius: 10px;
+}
+
+#ageRating {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+#createpostbtn {
+  text-align: center;
+  background-color: #d12441;
+  color: white;
+  width: 300px;
+  height: 50px;
+  border: none;
+  font-size: 20px;
+}
+
+#createpostbtn:hover,
+#createpostbtn:after {
+  background-color: #3f000b;
+}
+.post_response {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
+@media screen and (max-width: 980px) {
+  .Createpost {
+    padding: 30px 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    background: white;
+  }
+  .coverrDiv,
+  .storyInfoDiv {
+    border-radius: 0px;
+  }
+
+  #postTitle,
+  #genre,
+  #trope,
+  #author,
+  #character {
+    width: 100%;
+  }
+  #ageRating {
+    display: flex;
+    gap: 10px;
+  }
+}
